@@ -28,7 +28,7 @@ class PizzaController extends Controller
 
         $sizes = ["Small", "Medium", "Large", "Extra Large"] ;
         $types = ["Cheese", "BBQ Chicken", "Hawaiian", "Margarita", "Vegetable", "Volcano"];
-        $bases = ["Original Crust", "Pan Crust", "Skinny Crust"];
+        $bases = ["Original Crust", "Cheesy Crust", "Pan Crust", "Skinny Crust"];
         $toppings = ["Extra Cheese", "Pepperoni", "Bacon", "Sausage", "Onions", "Green Peppers", "Tomatoes"];
         
         return view("index", [

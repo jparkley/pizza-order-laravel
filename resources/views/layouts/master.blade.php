@@ -14,7 +14,7 @@
       <div class="text-3xl text-green-800 ml-2 my-auto flex-none font-serif"><a href="/" class="no-underline">Pizza Town</a></div>
     </div>
     <div class="ml-auto flex space-x-8 my-auto">          
-      <div class="h_btns"><a href="/order/create" class="no-underline">Admin: New Order</a></div>          
+      <div class="h_btns"><a href="/orders" class="no-underline">Admin: Orders</a></div>          
     </div>
   </div>
   <!-- End of Top Nav -->

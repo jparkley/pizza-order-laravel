@@ -12,8 +12,4 @@ under development
 
 ## TODO
 
-'Back to the List' link from the post page
-3rd party email service
-Attachment to a post
-
 :musical_note:
