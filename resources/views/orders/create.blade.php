@@ -35,6 +35,33 @@
             </select>
             <label for="name" class="mb-1 font-bold text-green-800">Price: </label>
             <input name="price" id="price" type="text" placeholder="$" class="px-3 py-2 mb-3 border-2 border-gray-200 rounded-sm">
+            <label for="toppings[]" class="mb-1 font-bold text-green-800">Choose pizza toppings: </label>
+            <div class="grid grid-cols-3">
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5 text-gray-600" value="Extra Cheese"><span class="ml-2 text-gray-700">Extra Cheese</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Pepperoni"><span class="ml-2 text-gray-700">Pepperoni</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Bacon"><span class="ml-2 text-gray-700">Bacon</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Sausage"><span class="ml-2 text-gray-700">Sausage</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Onions"><span class="ml-2 text-gray-700">Onions</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Green Peppers"><span class="ml-2 text-gray-700">Green Peppers</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Tomatoes"><span class="ml-2 text-gray-700">Tomatoes</span>
+                </label>
+                <label class="inline-flex items-center mt-3">
+                    <input type="checkbox" name="toppings[]" class="form-checkbox h-5 w-5" value="Mushrooms"><span class="ml-2 text-gray-700">Mushrooms</span>
+                </label>
+            </div>
             <input type="submit" value="Order" class="my-2 py-2 font-bold cursor-pointer">                
         </form>            
     </div>

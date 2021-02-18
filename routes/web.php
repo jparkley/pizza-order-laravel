@@ -25,3 +25,7 @@ Route::get('/order/create', [OrderController::class, 'create']);
 Route::get('/order/{id}', [OrderController::class, 'show']);
 
 Route::post('/orders', [OrderController::class,'store']);
+Route::delete('/orders/{id}', [OrderController::class, 'destroy']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
