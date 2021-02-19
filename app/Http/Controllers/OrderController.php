@@ -7,6 +7,11 @@ use App\Models\Order;
 
 class OrderController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index() {
         $orders = Order::orderBy('created_at', 'desc')->get();         
         return view('orders.index', ['orders'=>$orders]);

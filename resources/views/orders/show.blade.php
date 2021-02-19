@@ -39,7 +39,7 @@
             <span class="font-bold text-green-800">Price: </span>
             <span class="pl-3">{{ $order->price }}</span>
         </div>    
-        <form action="/orders/{{ $order->id}}" method="POST" class="p-4 flex flex-col rounded-lg">
+        <form action="{{ route('orders.destroy', $order->id) }}" method="POST" class="p-4 flex flex-col rounded-lg">
             @csrf
             @method('DELETE')
             <input type="submit" value="Complete Order" class="p-3 rounded-lg shadow cursor-pointer">

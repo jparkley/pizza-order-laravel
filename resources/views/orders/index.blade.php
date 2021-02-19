@@ -6,7 +6,7 @@
     <div class="w-8/12 mt-20">
         <div class="mb-5 flex">            
             <div class="flex-auto text-3xl text-center font-bold">Current Orders</div>
-            <div class="flex-none mt-2 pr-2 font-bold text-green-800"><a href="/order/create">Enter New Order</a></div>
+            <div class="flex-none mt-2 pr-2 font-bold text-green-800"><a href="{{ route('orders.create') }}">Enter New Order</a></div>
         </div>        
         <div class="w-full shadow bg-yellow-100">
             <table class="w-full table-auto">
@@ -21,7 +21,7 @@
                 @foreach ($orders as $order)
                     <tr class="text-sm  hover:bg-gray-100">
                         <td class="p-3 text-center whitespace-no-wrap">
-                            <p class="text-gray-900 font-bold"><a href="/order/{{$order->id}}">{{$order->name}}</a></p>
+                            <p class="text-gray-900 font-bold"><a href="{{ route('orders.show', $order->id) }}">{{$order->name}}</a></p>
                         </td>
                         <td class="text-center whitespace-no-wrap">{{ $order->size }}</td>
                         <td class="text-center whitespace-no-wrap">{{ $order->type }}</td>
